@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: white;
+    line-height: 1.8;
+	background-color: #2F3137;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/images/torontoSkyline6.jpg');
+    min-height: 600px;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
 
   <head>
 
@@ -8,7 +37,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sorry! There are no more cases available for now. Please contact cases4causes@gmail.com for case requests.</title>
+    <title>Sorry.</title>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
@@ -24,8 +53,24 @@
   </head>
 
   <body>
-
-
+	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+			<div align="center">
+			<span class="w3-hide-small"><h1 style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;background-color:#A6EAFF;height: 110%;width: 150px;"><b><i>Ignite.</i></b></h1></span>
+			</div>  
+		</div>
+	</div>
+	
+	<!-- Container (About Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="about">
+    <!-- Hide this text on small devices -->
+		<div class="w3-col m6 w3-hide-small w3-padding-large">
+			<p>Sorry! There are no more cases available for now. Please contact cases4causes@gmail.com for case requests.</p>
+		</div>
+	</div>
+	
+	
+	
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
