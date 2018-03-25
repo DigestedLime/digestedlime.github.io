@@ -229,20 +229,30 @@ body, html {
       <img src="/images/logo.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Ignite logo." width="600" height="333">
 	</div>
 	<p>E-commerce is here! Please specify the design you want in the message to seller!</p>
-	<div class="w3-col m6 w3-hide-large w3-padding-large">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="SUTWZWSMQN8T6">
+		<table>
+		<tr><td><input type="hidden" name="on0" value="Enter model for case here.">Enter model for case here.</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+		</table>
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	
+	<!--<div class="w3-col m6 w3-hide-large w3-padding-large">
 	  <div align="center">
 	    <a href="https://www.paypal.com/webapps/hermes?token=6A4368087B555872H&useraction=commit&rm=1&mfid=1521938109186_2e8444b0c5481"><button>Buy Now! <i class="fa fa-cc-paypal w3-hover-opacity"></i></button></a>
 	  </div>
-	</div>
+	</div>-->
 	<!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
 	  
-	  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	  <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 		<input type="hidden" name="cmd" value="_s-xclick">
 		<input type="hidden" name="hosted_button_id" value="SUTWZWSMQN8T6">
 		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	  </form>
+	  </form>-->
 		
 	  <!--<button id="myButton" class="float-left submit-button" >Buy Now!</button>-->
 	  <script type="text/javascript">
