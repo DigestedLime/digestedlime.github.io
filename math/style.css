@@ -1,0 +1,45 @@
+body{
+	font: 20px Comic Sans MS;
+}
+
+#nav{
+	width: 100%;
+	position: relative;
+	background-color: gray;
+}
+
+#main{
+	width: 100%;
+	position: relative;
+	background-color: yellow;
+}
+
+#sidebar{
+	width: 30%;
+	position: absolute;
+	left: 0;
+	background-color: red;
+}
+
+#graph{
+	background-color: green;
+	position: absolute;
+	right: 0;
+	width: 70%;
+}
+
+#input{
+	background-color: white;
+}
+
+h1, h2 {
+ font-family: 'Allerta', Helvetica, Arial, sans-serif;
+ font-size: 50px;
+ line-height: 55px;
+}
+ 
+p {
+ font-family: 'Crimson Text', Georgia, Times, serif;
+ font-size: 16px;
+ line-height: 25px;
+}
