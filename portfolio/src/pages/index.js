@@ -10,7 +10,7 @@ import Tags from "../components/tags";
 
 const IndexPage = () => (
   <StaticQuery
-  query={graphql`
+  /*query={graphql`
     query {
       portfolio: file(relativePath: { eq: "portfolio.png" }) {
         childImageSharp {
@@ -34,29 +34,24 @@ const IndexPage = () => (
         }
       }
     }
-    `}
+    `}*/
     render={data => (
       <Layout>
         <SEO
           title="Programmer, Developer, Student"
           keywords={["akira takaki", "digestedlime", "phoenixgaruda"]}
         />
+        <Section
+          title="Hello!"
+          shadow="light blue"
+          container
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        ></Section>
+
       </Layout>
     )}
   />
-
-  
-  
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+);
 
 export default IndexPage
