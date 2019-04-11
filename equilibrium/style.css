@@ -19,6 +19,7 @@
     padding-top:30px;
     height:0;
     overflow:hidden;
+    margin: 0 auto;
   }
   .yt-container iframe, .yt-container object, .yt-container embed {
     position:absolute;
