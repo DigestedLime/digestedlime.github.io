@@ -1,0 +1,1 @@
+# This was an attempt at making a website for Not Just Rumours, a non-profit student organization that protested change in the education system.

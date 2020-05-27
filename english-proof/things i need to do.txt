@@ -1,0 +1,3 @@
+- for assume, be able to read the following expression as a logical statement
+- for so, need to make sure it follows from things after the colon
+- same for conclude

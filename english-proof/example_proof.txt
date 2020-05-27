@@ -1,0 +1,11 @@
+assume e, f in R_Sigma
+assume P(e) and P(f)
+so P(e): line 2
+so reverse(e) = L(e'): line 3, defn 1
+so P(f): line 2
+so reverse(f) = L(f'): line 5, defn 1
+show reverse(ef) = reverse(f)reverse(e)
+so reverse(f)reverse(e) in R_Sigma: defn reglang
+so reverse(ef) in R_Sigma: line 7, line 8
+so exists (ef)', L((ef)') = reverse(f)reverse(e): line 9
+conclude P(ef): line 10
